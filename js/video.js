@@ -35,6 +35,7 @@ document.addEventListener("load", function(){
 
 playButton.addEventListener("click", function(){
 	video.play();
+	volumeSpan.innerHTML = video.volume * 100 + "%";
 })
 
 pauseButton.addEventListener("click", function(){
